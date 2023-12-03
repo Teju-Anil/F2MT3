@@ -1,0 +1,240 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f8efef;
+    background: #1D1D23;
+}
+h1{
+    color: white;
+}
+
+#container{
+    height: 10vh;
+
+    /* width: 849px;
+    height: 132px;
+    flex-shrink: 0; */
+    width : 90vw ;
+    color: white;
+    background-color: #fff;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+    padding: 20px;
+    border-radius: 20px;
+    /* border-radius: 20px; */
+    background: #34344A;
+
+}
+input{
+    border-radius: 4px;
+    height: 25px;
+    border-color: none;
+}
+
+#startTimer{
+    
+    /* border-radius: 20px;
+    background: #F0F757;
+    border: none;
+    color: black !important;
+    font-size: 18px!important;
+    padding: 5px  40px!important;
+    /* border-radius: 100px; */
+    /* cursor: pointer;
+    height: 5vh; */ */
+
+    /* color: !important; */
+    color: #34344A !important;
+    border-radius: 26px;
+    border: none;
+    background: #F0F757;
+    text-align: center !important; 
+    font-family: Roboto !important;
+    font-size: 18px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: normal !important;
+    width: 124px;
+    height: 5vh;
+    flex-shrink: 0;
+}
+
+#startTimer:hover{
+    background:#079309;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#para{
+    display: flex;
+    justify-content: space-between;
+    float: left;
+}
+
+#heading{
+    font-weight: bold;
+    font-size: 16px;
+   
+    color: white;
+    height: 3vh;
+    width: 10vw;
+    margin: auto;
+    padding: 5px  40px!important;
+    /* border-radius: 100px; */
+    border-radius: 50px !important;
+    background: #39393E;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+   
+}
+
+.timer-container {
+
+    border-radius: 20px;
+    background: #34344A; 
+    display: flex;
+    color : black;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    /* background-color:#F0F757; */
+}
+
+.timer {
+    display: flex;
+    font-size: 24px;
+    color : white;
+    
+}
+
+.timer-ended {
+    display: flex;
+    color:white;
+   
+    
+}
+
+.time-left {
+    color:white;
+    display: flex;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.timer-controls {
+    
+    justify-content: center;
+}
+
+.control-button {
+    display:flex;
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.stop-button {
+
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    width: 124px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background: #F0F757;
+  
+}
+
+.stop-button:hover {
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.delete-button {
+
+    width: 124px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background: #F0F757;
+    
+}
+
+.delete-button:hover {
+  
+    background-color: rgb(205, 1, 1);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#heading {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-top: 20px !important;
+    grid-gap: 10px !important;
+    margin: 20px;
+
+    margin: auto ;
+}
+
+
+
+  @media (min-width: 400px ) and (max-width: 768px) {
+ 
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content: space-between;
+        width:100vw;
+        background-color: #34344A !important;
+
+    }
+    input{
+        display: flex;
+        flex:auto;
+        offset-distance: 5px;
+    }
+   
+ 
+    .timer-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        width: 100%;
+    
+    }
+    .timer{
+        display: flex;
+        flex-shrink: 20px;
+    }
+    #startTimer{
+        padding-top: 5px;
+    }
+    #activeTimers{
+        width: 150% !important;
+
+        margin: 25px !important;
+        margin-top: 20px;
+        align-items: center !important;
+        padding: 20px !important;
+    }
+
+  }

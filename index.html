@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm App</title>
+    
+    <link rel="shortcut icon" href="alarm.png" type="image/x-icon" width="200px" height="200px">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Multiple Timers App</h1>
+    <div id="container">
+        <p id="para">Set Time</p>
+        <label for="hours">Hours:
+        <input type="number" id="hours" min="0"></label>
+        <label for="minutes">Minutes:
+        <input type="number" id="minutes" min="0"></label>
+        <label for="seconds">Seconds:
+        <input type="number" id="seconds" min="0"></label>
+        <button id="startTimer">Start</button>
+    </div>
+    <h2 id="heading">Current Timers</h2>
+    <div id="activeTimers"></div>
+    <script src="script.js"></script>
+</body>
+</html>
